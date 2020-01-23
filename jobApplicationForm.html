@@ -15,6 +15,55 @@
 <form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
 
 	<fieldset class="form-horizontal" >
+		<legend>Education</legend>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">University</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="text" name="University">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Secret Student ID</label>
+			<div class="col-sm-9">
+				<input class="form-control" type="password" name="Student ID">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="control-label">Any other comments about your education?</label>
+			<textarea class="form-control" name="educationcomments" rows="6"></textarea>
+		</div>
+		<div class="form-group row">
+			<label class="col-sm-3 control-label">Have you completed your degree?</label>
+				<div class="col-sm-offset-1 col-sm-11">
+					<div class="radio">
+						<label>
+							<input type="radio" name="degreeYes" value="yes">Yes
+						</label>
+					</div>
+					<div class="radio">
+						<label>
+							<input type="radio" name="degreeNo" value="no">No
+						</label>
+					</div>
+				</div>
+		</div>
+		<p>&nbsp;</p>
+		<div class="form-group">
+			<label class="col-sm-3 control-label">Country where degree was completed</label>
+			<div class="col-sm-9">
+				<select class="form-control" name="Country">
+					<option value="" selected="true">Choose a Country</option>
+					<option value="USA">United States of America</option>
+					<option value="CA">Canada</option>
+					<option value="CN">China</option>
+					<option value="EU">European Union</option>
+				</select>
+			</div>
+		</div>
+		<input class="btn btn-primary btn-lg" type="submiteducation" value="Submit just education">
+	</fieldset>
+
+	<fieldset class="form-horizontal" >
 		<legend>Account</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Email</label>
@@ -121,18 +170,6 @@
 			<label class="col-sm-3 control-label">ZIP</label>
 			<div class="col-sm-9">
 				<input class="form-control" type="text" name="zip">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Country</label>
-			<div class="col-sm-9">
-				<select class="form-control" name="Country">
-					<option value="" selected="true">Choose a Country</option>
-					<option value="USA">United States of America</option>
-					<option value="CA">Canada</option>
-					<option value="CN">China</option>
-					<option value="EU">European Union</option>
-				</select>
 			</div>
 		</div>
 	</fieldset>
